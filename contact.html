@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Rahul Mahyavanshi</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+    <div id="preloader">
+        <div class="jumping-dots">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <header id="header" class="header">
+        <div class="container container-lg">
+          <div class="header-nav">
+            <a href="index.html" class="logo">BVC</a>
+            <nav id="nav" class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Works.html" class="nav-link">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="HTML_sheet.html" class="nav-link">Solutions</a>
+                </li>
+              </ul>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <br/><br/><br/><br/>
+    <!-- Main container -->
+    <div class="container">
+        <p>Fill up the form to get in touch with us. </p>
+
+        <!-- Contact form section -->
+        <div class="contact-box">
+            <!-- Left side of the form -->
+            <div class="container-left">
+                <h3>Fill the Form*</h3>
+                <!-- Form -->
+                <form id="contactForm" onsubmit="return sendEmail()">
+                  <div class="input-row">
+                      <div class="input-group">
+                          <label>Name*</label>
+                          <input type="text" id="name" placeholder="Enter your Name" required>
+                      </div>
+              
+                      <div class="input-group">
+                          <label>Phone*</label>
+                          <input type="text" id="phone" placeholder="+1 1234567890" required>
+                      </div>
+                  </div>
+                  
+                  <!-- Input row for Email and Subject -->
+                  <div class="input-row">
+                      <div class="input-group">
+                          <label>Email*</label>
+                          <input type="email" id="email" placeholder="youremail@gmail.com" required>
+                      </div>
+              
+                      <div class="input-group">
+                          <label>Subject</label>
+                          <input type="text" id="subject" placeholder="Inquiry">
+                      </div>                       
+                  </div>
+              
+                  <!-- Label for Message textarea -->
+                  <label>Message*</label>
+                  <textarea rows="10" id="message" placeholder="Enter your Message" required></textarea>
+                  <button type="submit">SEND MESSAGE</button>
+              </form>
+              
+            </div>
+            <!-- Right side with contact information -->
+            <div class="container-right">
+                <h3>Reach Us</h3>
+                <!-- Table for contact information -->
+                <table>
+                    <tr>
+                        <td>Email: </td>
+                        <td>rahulmahyavanshi00@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone: </td>
+                        <td>+1 368-887-1135</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address: </td>
+                        <td>
+                            Calgary, AB<br>
+                           </td>
+                    </tr>
+                </table>
+                
+                <!-- Map section -->
+                <div class="map">
+                    <!-- Google Map iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=https://maps.app.goo.gl/rGDu6zbKiCCc8w1Z7" width="800" height="275" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="social-links-row footer-social">
+              <a href="https://github.com/rahulmahyavanshi" target="_blank">
+                <img src="img/social_icons/github.svg" alt="Link to GitHub account" />
+              </a>
+              
+              <a href="https://www.linkedin.com/in/rahul-mahyavanshi00/" target="_blank">
+                <img src="img/social_icons/linkedin.svg" alt="Link to LinkedIn profile" />
+              </a>
+              
+              <a href="https://www.xing.com" target="_blank">
+                <img src="img/social_icons/xing.svg" alt="Link to Xing profile" />
+              </a>
+              
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="img/social_icons/facebook.svg" alt="Link to Facebook profile" />
+              </a>
+              
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="img/social_icons/instagram.svg" alt="Link to Instagram profile" />
+              </a>
+              
+            </div>
+  
+            <div class="footer-copyright">
+              <p>&copy; Copyright Rahul Mahyavanshi 2024 | Designed by Rahul Mahyavanshi</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+<!--References -->
+
+<!--https://stackoverflow.com/questions/54264689/how-do-i-embed-google-maps-url-to-website-using-html -->
